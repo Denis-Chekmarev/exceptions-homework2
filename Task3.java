@@ -14,11 +14,11 @@ public class Task3 {
             int[] abc = { 1, 2 };
             abc[3] = 9;
         }
+        catch (ArithmeticException ex) {
+            System.out.println("[ОШИБКА] Деление на ноль");
+        }
         catch (IndexOutOfBoundsException ex) {
             System.out.println("Массив выходит за пределы своего размера!");
-        }
-        catch (Throwable ex) {
-            System.out.println("Что-то пошло не так...");
         }
     }
 }
